@@ -3,7 +3,7 @@
 // onrender.com URL or "https://api.ozstarfactory.com" once DNS is set up.
 // Leave it empty to show the built-in message without calling the backend.
 (function () {
-  var PRODUCTION_API_URL = "https://api.ozstarfactory.com";
+  var PRODUCTION_API_URL = "https://ozstarfactory-api.onrender.com";
   var isLocal = /^(localhost|127\.0\.0\.1)$/.test(window.location.hostname);
 
   window.OZSTAR_CONFIG = {
