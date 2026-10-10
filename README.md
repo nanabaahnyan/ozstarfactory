@@ -64,13 +64,15 @@ No code change is needed.
 
 ### 3. Namecheap DNS
 
-Go to Namecheap → Domain List → **Manage** → **Advanced DNS**. Remove the default
-parking records, then add:
+Live now: frontend https://ozstarfactory.vercel.app, backend https://ozstarfactory-api.onrender.com.
+`ozstarfactory.com` and `www.ozstarfactory.com` are already added to the Vercel project.
+Once the domain is active in Namecheap, go to **Domain List → Manage → Advanced DNS**,
+delete the default parking records (the `@` URL Redirect and the `www` CNAME to parkingpage),
+and add:
 
 | Type | Host | Value |
 |---|---|---|
-| A | `@` | `76.76.21.21` (or the value Vercel shows) |
-| CNAME | `www` | the value Vercel shows (e.g. `cname.vercel-dns.com`) |
-| CNAME | `api` | `<your-service>.onrender.com` |
+| A Record | `@` | `216.198.79.1` |
+| CNAME Record | `www` | `7c2a9fc32c788bca.vercel-dns-017.com.` |
 
-DNS can take from a few minutes to a few hours to update. Vercel and Render issue SSL certificates automatically.
+Vercel then issues SSL automatically, and `ozstarfactory.com` redirects to `www.ozstarfactory.com`.
