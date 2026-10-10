@@ -37,7 +37,8 @@ body {
 }
 
 .header {
-  border-bottom: 3px solid var(--navy);
+  background: var(--navy);
+  border-bottom: 4px solid var(--green);
 }
 
 .header__inner {
@@ -52,6 +53,9 @@ body {
   width: 64px;
   height: 64px;
   display: block;
+  padding: 4px;
+  background: #ffffff;
+  border-radius: 50%;
 }
 
 .header__name {
@@ -62,18 +66,18 @@ body {
 
 .header__ozstar {
   font-size: 26px;
-  color: var(--navy);
+  color: #ffffff;
 }
 
 .header__factory {
   font-size: 26px;
-  color: var(--green);
+  color: #5cc957;
 }
 
 .header__limited {
   display: block;
   font-size: 14px;
-  color: var(--navy);
+  color: #d6e2ef;
 }
 
 .main {
@@ -131,10 +135,11 @@ p {
 }
 
 .footer {
-  border-top: 3px solid var(--navy);
+  background: var(--navy);
+  border-top: 4px solid var(--green);
   padding: 16px 0;
   font-size: 13px;
-  color: var(--muted);
+  color: #d6e2ef;
 }
 
 @media (max-width: 520px) {
